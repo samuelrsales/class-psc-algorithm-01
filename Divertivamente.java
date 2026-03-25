@@ -36,10 +36,10 @@ public class Divertivamente{
         }
 
         System.out.println("Quantos exécicios a Riley conseguiu fazer: ");
-        int exerciciosResolvido = scanner.nextInt() * 10;
+        int exerciciosResolvido = scanner.nextInt();
 
-        pontosAlegria += exerciciosResolvido;
-        pontosTristeza += (exerciciosResolvido - 10);
+        pontosAlegria += (exerciciosResolvido * 10);
+        pontosTristeza += ((10 - exerciciosResolvido) * 10);
 
         if (pontosAlegria > pontosTristeza) {
             System.out.println("A mudança para a nova cidade foi uma experiência incrível para a Riley.");
